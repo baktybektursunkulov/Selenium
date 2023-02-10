@@ -1,5 +1,4 @@
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,8 +11,6 @@ public class Phone {
         webdriver.get("https://krisha.kz/");
         WebElement webElement= webdriver.findElement(By.className("is-visible"));
         webElement.click();
-        Document document = Jsoup.parse(webdriver.getPageSource());
-        System.out.println(document.getElementsByClass("element-region-dropdown-selects").first().child(0).child(0).child(1).attr("data-lat"));
 
 //        if (1==1) {
 //            JSONObject jsonObject = new JSONObject();

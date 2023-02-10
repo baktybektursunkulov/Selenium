@@ -1,6 +1,4 @@
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
+
 
 import java.io.IOException;
 
@@ -15,36 +13,36 @@ public class A {
 //        Thread.sleep(2000);
 //        WebElement webElement=webdriver.findElement(By.className("show-phones"));
 //        webElement.click();
-        Document doc= Jsoup.connect("https://krisha.kz/a/show/674885198").get();
-        Element element=doc.getElementById("jsdata");
-        String s= String.valueOf(element);
-        System.out.println(s);
-        String k="";
-        int d = 0;
-        for (int i = 0; i < s.length(); i++) {
-            if(s.charAt(i)=='"'&&s.charAt(i+1)=='l'&&s.charAt(i+2)=='a'&&s.charAt(i+3)=='t'&&s.charAt(i+4)=='"'){
-                d=i+6;
-            }
-        }
-        for (int i = d; i < s.length(); i++) {
-            if (s.charAt(i)==',')break;
-            k+=s.charAt(i);
-        }
-        System.out.println(k);
-        System.out.println(s.substring(d,d+15));
-        String k1="";
-        int d1 = 0;
-        for (int i = 0; i < s.length(); i++) {
-            if(s.charAt(i)=='"'&&s.charAt(i+1)=='l'&&s.charAt(i+2)=='o'&&s.charAt(i+3)=='n'&&s.charAt(i+4)=='"'){
-                d1=i+6;
-            }
-        }
-        for (int i = d1; i < s.length(); i++) {
-            if (s.charAt(i)==',')break;
-            k1+=s.charAt(i);
-        }
-        System.out.println(k1);
-        System.out.println(s.substring(d1,d1+15));
+//        Document doc= Jsoup.connect("https://krisha.kz/a/show/674885198").get();
+//        Element element=doc.getElementById("jsdata");
+//        String s= String.valueOf(element);
+//        System.out.println(s);
+//        String k="";
+//        int d = 0;
+//        for (int i = 0; i < s.length(); i++) {
+//            if(s.charAt(i)=='"'&&s.charAt(i+1)=='l'&&s.charAt(i+2)=='a'&&s.charAt(i+3)=='t'&&s.charAt(i+4)=='"'){
+//                d=i+6;
+//            }
+//        }
+//        for (int i = d; i < s.length(); i++) {
+//            if (s.charAt(i)==',')break;
+//            k+=s.charAt(i);
+//        }
+//        System.out.println(k);
+//        System.out.println(s.substring(d,d+15));
+//        String k1="";
+//        int d1 = 0;
+//        for (int i = 0; i < s.length(); i++) {
+//            if(s.charAt(i)=='"'&&s.charAt(i+1)=='l'&&s.charAt(i+2)=='o'&&s.charAt(i+3)=='n'&&s.charAt(i+4)=='"'){
+//                d1=i+6;
+//            }
+//        }
+//        for (int i = d1; i < s.length(); i++) {
+//            if (s.charAt(i)==',')break;
+//            k1+=s.charAt(i);
+//        }
+//        System.out.println(k1);
+//        System.out.println(s.substring(d1,d1+15));
 
 //        String s="5 bj 8";
 //        int i = 0;

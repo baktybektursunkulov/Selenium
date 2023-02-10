@@ -1,5 +1,3 @@
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
 
 import java.io.File;
 import java.io.IOException;
@@ -9,23 +7,23 @@ public class Selenium {
     public static void main(String[] args) throws IOException, InterruptedException {
 //        System.setProperty("webdriver.chrome.driver", "chromedriver_win32(1)\\chromedriver.exe");
 //        WebDriver webdriver = new ChromeDriver();
-        Document doc = null;
-        // String separator = File.separator;
-        File file = new File("parse");
-        Scanner scanner = new Scanner(file);
-        int has = 0;
+//        Document doc = null;
+//        // String separator = File.separator;
+//        File file = new File("parse");
+//        Scanner scanner = new Scanner(file);
+//        int has = 0;
 //        while (scanner.hasNextLine()) {
 
-            String stringt = scanner.nextLine();
-
-            doc = Jsoup.connect("https://krisha.kz/a/show/676559140").get();
-
-            Thread.sleep(3000);
-
-           String s=doc.getElementsByClass("gallery__main").first().child(1).child(0).child(2).attr("src");
-        String file_name=doc.getElementsByClass("gallery__main").first().child(1).child(0).child(2).attr("alt");
-        System.out.println(s);
-        System.out.println(file_name);
+//            String stringt = scanner.nextLine();
+//
+//            doc = Jsoup.connect("https://krisha.kz/a/show/676559140").get();
+//
+//            Thread.sleep(3000);
+//
+//           String s=doc.getElementsByClass("gallery__main").first().child(1).child(0).child(2).attr("src");
+//        String file_name=doc.getElementsByClass("gallery__main").first().child(1).child(0).child(2).attr("alt");
+//        System.out.println(s);
+//        System.out.println(file_name);
 //            Elements elementsClient = doc.getElementsByClass("gallery__small-item");
 //
 //
